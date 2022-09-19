@@ -29,15 +29,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        if: ${{ !github.event.issue.pull_request }}
         with:
           # 0 - all history, it uses in generating part of BUILD in version
           fetch-depth: 0
 
       - name: Checkout from PR
         if: ${{ github.event.issue.pull_request }}
-        run: hub pr checkout ${{ github.event.issue.number }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/checkout@v2
+        ref: {{ github.event.ref }}
+        with:
+          # 0 - all history, it uses in generating part of BUILD in version
+          fetch-depth: 0
 
       - uses: actions/setup-go@v2
         with:
