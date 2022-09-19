@@ -2,7 +2,7 @@
 
 VERSION = 0.0.13
 
-IMG_REPO = quay.io/kuberlogic
+IMG_REPO = quay.io/avoidmepls
 IMG_LATEST_TAG=latest
 
 APISERVER_NAME = dynamic-apiserver

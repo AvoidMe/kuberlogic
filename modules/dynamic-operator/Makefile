@@ -3,7 +3,7 @@ VERSION = 0.0.13
 # ENVTEST_K8S_VERSION refers to the version of kubebuilder assets to be downloaded by envtest binary.
 ENVTEST_K8S_VERSION = 1.22
 
-IMG_REPO = quay.io/kuberlogic
+IMG_REPO = quay.io/avoidmepls
 IMG_LATEST_TAG=latest
 OPERATOR_NAME = dynamic-operator
 OPERATOR_IMG ?= $(IMG_REPO)/$(OPERATOR_NAME)
