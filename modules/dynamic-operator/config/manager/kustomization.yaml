@@ -29,11 +29,11 @@ patches:
         kl-config: "true"
 images:
 - name: apiserver
-  newName: quay.io/kuberlogic/dynamic-apiserver
+  newName: quay.io/avoidmepls/dynamic-apiserver
   newTag: 0.0.12
 - name: chargebee-integration
-  newName: quay.io/kuberlogic/chargebee-integration
+  newName: quay.io/avoidmepls/chargebee-integration
   newTag: 0.0.12
 - name: controller
-  newName: quay.io/kuberlogic/dynamic-operator
+  newName: quay.io/avoidmepls/dynamic-operator
   newTag: 0.0.12
